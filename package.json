@@ -4,7 +4,8 @@
   "description": "test api for socialblade.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [
     "youtube"
@@ -13,7 +14,13 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "mongoose": "^7.6.3",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "3.0.3"
   }
 }
