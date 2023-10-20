@@ -4,6 +4,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const pageRoute = require("./routes/pageRoute");
 const courseRoute = require("./routes/course_route");
+const categoryRoute = require("./routes/category_route");
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 
 app.use("/", pageRoute);
 app.use("/courses", courseRoute);
+app.use("/categories", categoryRoute);
 
 const port = 3000;
 app.listen(port, () => {
